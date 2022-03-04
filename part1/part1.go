@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	fmt.Println("Hello, Sakura miyawaki, Aruno Nakanishi, dan Sakura Endo!")
 	result := calculation.Add(10, 20)
 	//sentence := TestAja()
 	//fmt.Println(sentence)
