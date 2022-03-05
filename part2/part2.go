@@ -72,4 +72,20 @@ func main() {
 
 		}
 	}
+
+	var nama_idol [4]string
+	nama_idol[0] = "sakura miyawaki"
+	nama_idol[1] = "aruno nakanishi"
+	nama_idol[2] = "sakura endo"
+	nama_idol[3] = "Itou Miku"
+
+	fmt.Println(nama_idol)
+
+	var idol_grub = [4]string{"JKT48", "HKT48", "NOGIZAKA46", "AKB48"}
+	fmt.Println(idol_grub)
+
+	var vtuber = []string{"korone", "pekora", "moona"}
+	// tanpa memberikan berapa jumlah array
+	var newVtuber = vtuber[1:3]
+	fmt.Println(newVtuber)
 }
