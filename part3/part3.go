@@ -56,6 +56,11 @@ func main() {
 	penjumlahan := add(10, 20)
 	fmt.Println(penjumlahan)
 
+	luas, keliling := hitung(10, 20)
+	fmt.Println("luas", luas, "keliling", keliling)
+
+	JumlahLuas, jumlahKeliling := hitungReturnValue(30, 20)
+	fmt.Println("luas", JumlahLuas, "keliling", jumlahKeliling)
 }
 
 // basic funtion
@@ -71,4 +76,16 @@ func printWithReturn(sentence string) string {
 
 func add(a, b int) int {
 	return a + b
+}
+
+func hitung(panjang, lebar int) (int, int) {
+	luas := panjang * lebar
+	keliling := 2 * (panjang + lebar)
+	return luas, keliling
+}
+
+func hitungReturnValue(panjang, lebar int) (luas int, keliling int) {
+	luas = panjang * lebar
+	keliling = 2 * (panjang + lebar)
+	return
 }
